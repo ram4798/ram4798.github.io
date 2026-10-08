@@ -1,36 +1,63 @@
-# Rama Gangumalla portfolio
+# Rama Gangumalla | Data Engineer
 
-The latest portfolio, ready for GitHub Pages. It includes the new About portrait and name caption, click-to-pause/replay video, no moving progress bar, and a one-time introduction on opening. If a browser blocks autoplay with sound, the video tries muted playback.
+Source code for my personal data engineering portfolio.
 
-## Publish on GitHub Pages
+[Live portfolio](https://ram4798.github.io/) · [Project index](PROJECTS.md) · [Resume](public/assets/Rama-Gangumalla-Resume.pdf)
 
-1. Sign in to GitHub and create a **public** repository named **YOUR_USERNAME.github.io**, replacing YOUR_USERNAME with your actual GitHub username. This gives you the shortest free website URL.
-2. Extract this ZIP and upload its **contents** into the repository root, not the ZIP itself or an extra enclosing folder. Include the **.github** folder. On a Mac, press Command + Shift + Period to reveal hidden files when selecting them. Commit the files.
-3. Open the repository's **Settings → Pages**. Set **Source** to **GitHub Actions**.
-4. Open **Actions → Deploy portfolio to GitHub Pages → Run workflow**. Wait for the deployment to finish. If the first run happened before Pages was enabled, run it again after step 3.
-5. Copy the live URL shown in **Settings → Pages**. For the repository name above, it is **https://YOUR_USERNAME.github.io/**. Add that URL to your LinkedIn About and website fields.
+[![Deploy portfolio](https://github.com/ram4798/ram4798.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/ram4798/ram4798.github.io/actions/workflows/deploy.yml)
 
-You can also use a repository named `portfolio`; its URL is `https://YOUR_USERNAME.github.io/portfolio/`. The included workflow automatically sets asset paths, canonical URLs, and social-preview metadata for either layout and for an already-configured custom domain.
+## What is included
 
-Do not select "Deploy from a branch" for this source project. The included workflow builds the React/Vite site and deploys `dist/` automatically.
+- Professional case studies, experience, technical skills, and contact links.
+- A video introduction that plays once on opening, with click-to-pause, resume, and replay.
+- Responsive layouts, project dialogs, and a downloadable resume.
 
-## Make future changes
+The website uses React, TypeScript, and Vite. Original portraits, video, and resume are stored in `public/assets/`.
 
-Edit personal content in `src/content.ts`, components in `src/components/`, styles in `src/styles.css`, and media in `public/assets/`. A push to the repository's default branch triggers a new deployment.
+## Repository layout
+
+| Path | Purpose |
+| --- | --- |
+| `src/content.ts` | Personal content, skills, experience, and project descriptions. |
+| `src/components/` | Portfolio sections and shared components. |
+| `src/styles.css` | Website styles. |
+| `src/test/` | Interaction tests. |
+| `public/assets/` | Video, photos, resume, and social preview. |
+| `scripts/` | Prerendering and built-site validation. |
+| `.github/workflows/deploy.yml` | GitHub Pages build and deployment. |
+| `PROJECTS.md` | Index of related public repositories. |
 
 ## Run locally
 
-Use Node.js 22 and pnpm 11.25.0:
+Use Node.js 22 and pnpm 11.25.0.
 
 ```sh
+git clone https://github.com/ram4798/ram4798.github.io.git
+cd ram4798.github.io
 pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open `http://localhost:4173`. Run `pnpm test`, `pnpm build`, and `pnpm check:site` to check changes. For a specific hosting path and metadata URL, set `PAGES_BASE_PATH` and `PAGES_SITE_URL` before building. GitHub Actions supplies them automatically.
+Open `http://localhost:4173`.
 
-The resume and original media files retain their supplied bytes. The workflow contains no passwords, tokens, or account-specific credentials; it uses GitHub's built-in deployment token.
+## Check and build
 
-## Validation
+```sh
+pnpm test
+pnpm build
+pnpm check:site
+```
 
-Twelve interaction tests cover single-play autoplay, muted fallback, manual replay, pause/resume, viewport pausing, navigation, work dialogs, skills, and contact actions. Production builds and asset/metadata checks were run for both the root site and a `/portfolio/` path. Browser playback and an actual GitHub Actions deployment have not been tested in this environment.
+See [verification notes](VERIFICATION.md) for the checks covered.
+
+## Deployment
+
+GitHub Pages uses **GitHub Actions** as its source. A push to the default branch runs the tests, builds and checks the site, and deploys `dist/`.
+
+To deploy manually, open [Deploy portfolio to GitHub Pages](https://github.com/ram4798/ram4798.github.io/actions/workflows/deploy.yml) and select **Run workflow**.
+
+## Related files
+
+- [Public project index](PROJECTS.md)
+- [Prepared GitHub profile README](docs/profile-readme.md)
+- [Earlier portfolio export](https://github.com/ram4798/portfolio)
