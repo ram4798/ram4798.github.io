@@ -8,8 +8,8 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/rayudu-gangumallaa/',
   resume: asset('Rama-Gangumalla-Resume.pdf'),
   portrait: asset('rama-portrait-about.jpg'),
-  hero: asset('hero-scene.jpg'),
-  video: asset('rama-introduction.mp4'),
+  hero: asset('hero-scene.jpg') + '?v=8621cea6043d',
+  video: asset('rama-introduction.mp4') + '?v=8621cea6043d',
   bio: [
     'I’m a Data Engineer with 4+ years of experience building ETL/ELT pipelines, designing data models, and delivering analytics with Python, PySpark, SQL, and Power BI. My recent work at AMD includes Databricks pipelines that process millions of performance-test results each day and an internal application connecting workflow discovery, test planning, and performance reporting.',
     'My work spans data engineering and the applications that help people use data, from curated lakehouse layers to APIs and interactive dashboards.',

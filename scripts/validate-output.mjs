@@ -30,7 +30,7 @@ for (const element of document.querySelectorAll('[href], [src]')) {
   if (value.startsWith('#')) assert(document.getElementById(value.slice(1)), `Missing anchor: ${value}`);
   if (value.startsWith('/') && !value.startsWith('//')) {
     assert(value.startsWith(base), `Incorrect deployment base: ${value}`);
-    assert((await stat(resolve(root, 'dist', value.slice(base.length)))).isFile(), `Missing asset: ${value}`);
+    assert((await stat(resolve(root, 'dist', value.split(/[?#]/)[0].slice(base.length)))).isFile(), `Missing asset: ${value}`);
   }
 }
 const downloads = [...document.querySelectorAll('a[download]')];
