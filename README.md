@@ -60,4 +60,3 @@ To deploy manually, open [Deploy portfolio to GitHub Pages](https://github.com/r
 
 - [Public project index](PROJECTS.md)
 - [Prepared GitHub profile README](docs/profile-readme.md)
-- [Earlier portfolio export](https://github.com/ram4798/portfolio)
