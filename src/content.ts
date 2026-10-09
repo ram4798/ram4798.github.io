@@ -7,7 +7,7 @@ export const profile = {
   email: 'ramarayudu.g@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rayudu-gangumallaa/',
   resume: asset('Rama-Gangumalla-Resume.pdf'),
-  portrait: asset('rama-portrait-about.jpg'),
+  portrait: asset('rama-portrait-about.jpg') + '?v=d31d05b90692',
   hero: asset('hero-scene.jpg') + '?v=8621cea6043d',
   video: asset('rama-introduction.mp4') + '?v=8621cea6043d',
   bio: [
@@ -163,7 +163,7 @@ export const experience = [
     'Optimized PySpark transformations, reducing processing time by 25% versus previous Spark jobs.',
     'Built an internal workflow and test-planning application with Angular and FastAPI.',
     'Delivered GEMM performance reporting and Power BI dashboards.',
-  ], tags: ['Databricks', 'PySpark', 'Azure', 'FastAPI'] },
+  ], tags: ['Databricks', 'PySpark', 'Azure', 'FastAPI', 'Power BI'] },
   { company: 'Wayfair', role: 'Data Engineer', dates: 'Oct 2023 – Mar 2025', current: false, bullets: [
     'Built web and mobile clickstream ingestion through Azure Event Hubs.',
     'Managed Bronze, Silver, and Gold lakehouse layers in ADLS Gen2.',

@@ -63,7 +63,7 @@ export function Hero() {
         <p className="hero-intro"><span className="small-cross" aria-hidden="true">✳</span>HI, I’M RAMA GANGUMALLA</p>
         <h1 id="hero-title">Data<br />Engineer<span className="accent-period">.</span></h1>
         <p className="hero-description">I build data pipelines, analytics platforms, and tools that help teams make sense of their data.</p>
-        <p className="hero-expertise">Python <span>·</span> SQL <span>·</span> Databricks <span>·</span> Azure</p>
+        <p className="hero-expertise">Python <span>·</span> SQL <span>·</span> Databricks <span>·</span> Azure <span>·</span> Power BI</p>
         <div className="hero-actions"><a href="#work" className="button button-primary">View My Work<ArrowUpRight size={19} aria-hidden="true" /></a><ResumeLink /></div>
         <p className="hero-location"><MapPin size={14} aria-hidden="true" />Based in Austin, Texas</p>
         {error && <p className="video-error" role="alert">{error}</p>}

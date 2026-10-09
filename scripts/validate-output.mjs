@@ -16,7 +16,7 @@ assert.equal(document.querySelectorAll('.skill-tile').length, 35);
 assert.equal(document.querySelectorAll('.work-panel').length, 4);
 assert.equal(document.querySelectorAll('.timeline-item').length, 4);
 assert.equal(document.querySelector('.profile-card-top > span').textContent, 'Rama Gangumalla');
-assert.equal(document.querySelector('.profile-photo img').getAttribute('src'), `${base}assets/rama-portrait-about.jpg`);
+assert.equal(document.querySelector('.profile-photo img').getAttribute('src').split(/[?#]/)[0], `${base}assets/rama-portrait-about.jpg`);
 assert.equal(document.querySelectorAll('.video-toggle').length, 1);
 assert.equal(document.querySelectorAll('.intro-trigger, .video-progress').length, 0);
 assert.equal(document.querySelector('video').getAttribute('preload'), 'auto');
