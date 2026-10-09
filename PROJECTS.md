@@ -7,7 +7,6 @@ Start with the [live portfolio](https://ram4798.github.io/) for my professional 
 | Repository | Purpose |
 | --- | --- |
 | [ram4798.github.io](https://github.com/ram4798/ram4798.github.io) | Maintained source and GitHub Pages deployment for the live portfolio. |
-| [portfolio](https://github.com/ram4798/portfolio) | Earlier source snapshot and downloadable export. |
 
 ## Analysis and visualization coursework
 
